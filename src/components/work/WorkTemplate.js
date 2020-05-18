@@ -25,7 +25,9 @@ const Feature = ({ href, image, company, title, description, to }) => (
           <div className="break"></div>
           <p className="description">{description}</p>
 
-          <a to={to.href}>{to.label}</a>
+          <a href={to.href} target="_blank">
+            {to.label}
+          </a>
         </div>
       </div>
     </div>

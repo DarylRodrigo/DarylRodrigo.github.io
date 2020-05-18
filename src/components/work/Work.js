@@ -15,7 +15,7 @@ const Work = () => {
       description:
         'Accelerating the transition to renewable energy by making decarbonisation profitable',
       to: {
-        href: '/generic',
+        href: 'https://metronome.energy',
         label: 'Learn more',
       },
     },
@@ -27,7 +27,7 @@ const Work = () => {
       description:
         'Changing STEAM education with “learning by making” using Raspberry Pi based laptops',
       to: {
-        href: '/generic',
+        href: 'https://pi-top.com',
         label: 'Learn more',
       },
     },

@@ -98,6 +98,11 @@
     margin-bottom: 35px;
     margin-left: 2px;
     height: 2px;
+
+    @include breakpoint('<=small') {
+      height: 4px;
+    }
+
     // background-color: #c6c6c6;
     background: #87a2fe;
     width: 50%;
@@ -115,7 +120,7 @@
 
   .description {
     font-family: Lato;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
     width: 80%;
   }

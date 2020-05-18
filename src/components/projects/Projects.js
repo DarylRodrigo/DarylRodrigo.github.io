@@ -13,7 +13,7 @@ const Work = () => {
       description:
         'Implemented some fundamental reinforcement learning algorithms in pyTorch (PPO, DDPG, DQN)',
       to: {
-        href: '/generic',
+        href: 'https://github.com/DarylRodrigo/rl_lib',
         label: 'Learn more',
       },
     },
