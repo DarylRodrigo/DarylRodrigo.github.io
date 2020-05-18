@@ -47,17 +47,29 @@ const Introduction = () => (
 
     <ul className="icons social-links">
       <li>
-        <a href="/#" className="icon fa-twitter fa-2x">
+        <a
+          href="https://twitter.com/DarylRodrigo"
+          target="_blank"
+          className="icon fa-twitter fa-2x"
+        >
           <span className="label">Twitter</span>
         </a>
       </li>
       <li>
-        <a href="/#" className="icon fa-github fa-2x">
+        <a
+          href="https://github.com/DarylRodrigo"
+          className="icon fa-github fa-2x"
+          target="_blank"
+        >
           <span className="label">GitHub</span>
         </a>
       </li>
       <li>
-        <a href="/#" className="icon fa-linkedin fa-2x">
+        <a
+          href="https://linkedin.com/in/darylrodrigo"
+          target="_blank"
+          className="icon fa-linkedin fa-2x"
+        >
           <span className="label">LinkedIn</span>
         </a>
       </li>
