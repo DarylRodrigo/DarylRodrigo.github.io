@@ -24,11 +24,11 @@
   }
 
   #image {
-    display: flex;
     flex: 1;
     padding-left: 20vh;
 
     @include breakpoint('<=small') {
+      display: flex;
       padding-left: 0px;
       justify-content: center;
       align-items: center;
