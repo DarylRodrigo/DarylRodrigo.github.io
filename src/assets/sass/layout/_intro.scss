@@ -7,11 +7,14 @@
 /* Intro */
 
 #intro {
-  background-attachment: fixed;
-  background-image: url('images/intro.svg');
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  // background-attachment: fixed;
+  // background-image: url('images/intro.svg');
+  // background-position: top right;
+  // background-repeat: no-repeat;
+  min-height: 100vh;
+  // min-width: 100vw;
+
+  color: #4a4a4a;
 
   p {
     font-size: 1.25em;
@@ -29,5 +32,101 @@
 
   @include breakpoint('<=large') {
     background-attachment: scroll;
+  }
+
+  .navLink {
+    color: #121212;
+    margin: 0;
+    font-family: Lato;
+    font-size: 30px;
+
+    @include breakpoint('<=small') {
+      font-size: 10px;
+    }
+  }
+
+  .inner {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    color: #4a4a4a;
+    height: 90vh;
+
+    @include breakpoint('<=small') {
+      flex-direction: column;
+    }
+
+    .intro-image {
+      justify-content: center;
+    }
+
+    .content-section {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+
+      .intro-nav {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        @include breakpoint('<=small') {
+          margin-bottom: 20vh;
+        }
+      }
+
+      .mobile-hide {
+        @include breakpoint('<=small') {
+          display: none;
+        }
+      }
+
+      .intro-content {
+        flex-direction: column;
+        display: flex;
+        flex: 4;
+        justify-content: center;
+      }
+    }
+  }
+
+  .cover-image {
+    width: 100%;
+  }
+
+  .break {
+    margin-bottom: 35px;
+    margin-left: 2px;
+    height: 2px;
+    // background-color: #c6c6c6;
+    background: #87a2fe;
+    width: 50%;
+  }
+
+  .title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 100;
+  }
+
+  .bold-words {
+    font-weight: 400;
+  }
+
+  .description {
+    font-family: Lato;
+    font-weight: 200;
+    font-style: normal;
+    width: 80%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+
+    .icon {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 }

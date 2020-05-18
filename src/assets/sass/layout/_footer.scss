@@ -6,33 +6,28 @@
 
 /* Footer */
 
-	#footer {
-		#sidebar + #wrapper + & {
-			margin-left: _size(sidebar-width);
+#footer {
+  #line-parent {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
 
-			@include breakpoint('<=large') {
-				margin-left: 0;
-			}
-		}
+    #line {
+      z-index: -1;
+      height: 1px;
+      width: 100vw;
+      background-color: black;
 
-		> .inner {
-			a {
-				border-bottom-color: _palette(border);
+      position: absolute;
+      top: 235px;
+      left: 0;
+    }
 
-				&:hover {
-					border-bottom-color: transparent;
-				}
-			}
-
-			.menu {
-				font-size: 0.8em;
-				color: _palette(border);
-			}
-		}
-
-		#header + #wrapper + & {
-			> .inner {
-				margin: 0 auto;
-			}
-		}
-	}
+    .footer-image {
+      width: 1080px;
+      z-index: 99;
+    }
+  }
+}

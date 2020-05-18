@@ -1,0 +1,48 @@
+#about {
+  display: flex;
+  flex-direction: rows;
+  padding-bottom: 75px;
+
+  @include breakpoint('<=small') {
+    flex-direction: column-reverse;
+  }
+
+  #content {
+    flex: 2;
+
+    h3 {
+      font-family: Lato;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+
+      letter-spacing: 0.055em;
+      margin: 0 0 1em 0;
+
+      color: #000000;
+    }
+  }
+
+  #image {
+    display: flex;
+    flex: 1;
+    padding-left: 20vh;
+
+    @include breakpoint('<=small') {
+      padding-left: 0px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    img {
+      justify-content: center;
+      // align-items: center;
+      width: 100%;
+
+      @include breakpoint('<=small') {
+        width: 75%;
+      }
+    }
+  }
+}

@@ -11,13 +11,13 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">Work</Link>
         </li>
         <li>
-          <Link to="/generic">Generic</Link>
+          <Link to="/generic">Projects</Link>
         </li>
         <li>
-          <Link to="/elements">Elements</Link>
+          <Link to="/elements">About</Link>
         </li>
       </ul>
     </nav>
